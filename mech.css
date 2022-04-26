@@ -222,12 +222,12 @@ header .header-image-right {
 .quote-section {
   background: var(--darker-white);
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .quote-section .quote-flexbox {
   display: flex;
-  width: 1280px;
+  width: 90vw;
   margin: auto;
   margin-top: 10vh;
   column-gap: 5vw;
@@ -332,11 +332,12 @@ header .header-image-right {
 }
 
 .flexbox-process {
-  margin-left: 10.5%;
+  margin: auto;
   display: flex;
-  column-gap: 13vw;
+  column-gap: 12vw;
   flex-wrap: wrap;
   align-items: center;
+  width: max-content;
 }
 
 .process-left {
@@ -515,12 +516,24 @@ header .header-image-right {
   left: 17vw;
   bottom: 0;
   width: 710px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .get-in-touch .content {
   width: 90%;
   margin: auto;
-  margin-top: 10%;
+}
+
+.get-in-touch .content .contact-us {
+  margin-top: 3vh;
+}
+
+.content .contact-us button {
+  background: var(--black);
+  color: var(--white);
 }
 
 .proffessional-experience {
