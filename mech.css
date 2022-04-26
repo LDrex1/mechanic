@@ -483,8 +483,8 @@ header .header-image-right {
   font-size: var(--paragraph-1-size);
 }
 
-.cta {
-}
+/* .cta {
+} */
 
 .pictures-flexbox {
   position: relative;
