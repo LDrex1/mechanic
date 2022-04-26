@@ -74,7 +74,6 @@ button {
   margin: 2vh auto 0 auto;
 
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   column-gap: 24vw;
 }
@@ -139,7 +138,7 @@ button {
 header {
   display: flex;
   column-gap: calc(5px + 0.4vw);
-  width: 80vw;
+  width: 85vw;
   margin: auto;
   height: 600px;
 }
@@ -166,9 +165,8 @@ header .header-left {
   position: relative;
   display: flex;
   column-gap: 0.8vw;
-  /* min-width: max-content; */
-  max-width: 23vw;
-  height: 55px;
+  max-width: 30vw;
+  height: 48px;
 }
 
 .open-time .fa-regular {
@@ -231,6 +229,7 @@ header .header-image-right {
   display: flex;
   width: 1280px;
   margin: auto;
+  margin-top: 10vh;
   column-gap: 5vw;
 }
 
@@ -239,14 +238,18 @@ header .header-image-right {
 }
 
 .quote-left .quote-quote {
-  margin-bottom: 4vh;
+  margin-bottom: 5.3vh;
+}
+
+.quote-left .features-div {
+  margin-bottom: 6.5vh;
 }
 
 .quote-left .features-div .feature {
   width: 386px;
   display: flex;
   column-gap: 1vw;
-  margin-bottom: 3vh;
+  margin-bottom: 5.3vh;
 }
 
 .feature span {
@@ -517,7 +520,7 @@ header .header-image-right {
 .get-in-touch .content {
   width: 90%;
   margin: auto;
-  margin-top: 14%;
+  margin-top: 10%;
 }
 
 .proffessional-experience {
