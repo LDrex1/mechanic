@@ -200,18 +200,18 @@ header .header-image-right {
 
 .header-image-right .service-img {
   position: absolute;
-  width: 410px;
-  height: 290px;
-  top: 0;
-  left: -120px;
+  width: 275px;
+  height: 102px;
+  top: 58px;
+  left: -35px;
 }
 
 .header-image-right .rating-img {
   position: absolute;
-  width: 440px;
-  height: 310px;
-  bottom: -50px;
-  right: -120px;
+  width: 326px;
+  height: 102px;
+  bottom: 50px;
+  right: -25px;
 }
 
 .header-image-right img {
