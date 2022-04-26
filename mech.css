@@ -228,7 +228,7 @@ header .header-image-right {
 .quote-section .quote-flexbox {
   display: flex;
   flex-wrap: wrap;
-  min-width: 90vw;
+  width: fit-content;
   margin: auto;
   margin-top: 10vh;
   column-gap: 5vw;
@@ -299,8 +299,7 @@ header .header-image-right {
 }
 
 .quote-flexbox .quote-right {
-  min-width: 500px;
-  max-width: 45vw;
+  width: 628px;
 }
 
 .feature .quote-right .get-a-quote {
@@ -591,4 +590,66 @@ header .header-image-right {
 .brand-logo img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 1260px) {
+  .quote-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .quote-section .quote-flexbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .quote-flexbox .quote-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .quote-left .features-div {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2vw;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+
+  .quote-left .know-more {
+    margin-bottom: 3vh;
+  }
+
+  .quote-flexbox .quote-left,
+  .quote-flexbox .quote-right {
+    width: fit-content;
+  }
+
+  .quote-flexbox .quote-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quote-left .quote-quote {
+    margin-top: 2vh;
+    justify-self: center;
+    width: 90%;
+    text-align: center;
+  }
+
+  .quote-right .input-group {
+    margin-top: 2.5vh;
+  }
+
+  .quote-right .button-div {
+    margin-bottom: 2vh;
+  }
 }
