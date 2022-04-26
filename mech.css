@@ -227,14 +227,15 @@ header .header-image-right {
 
 .quote-section .quote-flexbox {
   display: flex;
-  width: 90vw;
+  flex-wrap: wrap;
+  min-width: 90vw;
   margin: auto;
   margin-top: 10vh;
   column-gap: 5vw;
 }
 
 .quote-flexbox .quote-left {
-  width: 584px;
+  width: 560px;
 }
 
 .quote-left .quote-quote {
@@ -295,6 +296,11 @@ header .header-image-right {
   display: inherit;
   height: 100%;
   align-items: center;
+}
+
+.quote-flexbox .quote-right {
+  min-width: 500px;
+  max-width: 45vw;
 }
 
 .feature .quote-right .get-a-quote {
