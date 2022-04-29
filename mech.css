@@ -24,6 +24,7 @@
 body {
   font-family: "Manrope", sans-serif;
   color: var(--black);
+  letter-spacing: -0.03em;
 }
 
 h1 {
@@ -63,6 +64,10 @@ button {
   font-size: var(--paragraph-1-size);
 }
 
+.title-2 {
+  font-size: var(--title-2-size);
+}
+
 .first-page {
   display: flex;
   flex-direction: column;
@@ -72,7 +77,6 @@ button {
 .first-page .topmost-bar {
   width: 66.5%;
   margin: 2vh auto 0 auto;
-
   display: flex;
   justify-content: center;
   column-gap: 24vw;
@@ -413,7 +417,6 @@ header .header-image-right {
 .point-content::before {
   content: "";
   border-left: 2px dashed var(--orange);
-  /* border-color: var(--orange); */
   position: absolute;
   top: 16px;
   height: 80%;
@@ -590,6 +593,111 @@ header .header-image-right {
 .brand-logo img {
   width: 100%;
   height: 100%;
+}
+
+.testimonials {
+  background: var(--lighter-white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials h3 {
+  max-width: 890px;
+  margin-top: 7vh;
+  margin-bottom: 4vh;
+  text-align: center;
+}
+
+.testimonials .flexbox {
+  display: flex;
+  width: 75%;
+  column-gap: calc(5px + 1vw);
+}
+
+.testimonials .testimonial-1,
+.testimonials .testimonial-2 {
+  background: var(--white);
+  min-width: 300px;
+  height: 376px;
+  min-height: 280px;
+  border-radius: 6px;
+  flex: 1;
+}
+
+.testimonial-1 .customer-info,
+.testimonial-2 .customer-info {
+  position: relative;
+  display: flex;
+  column-gap: calc(5px + 0.5vw);
+  align-items: center;
+  width: 80%;
+  padding-top: 9vh;
+  margin: auto;
+  margin-bottom: 4vh;
+}
+
+.testimonials p {
+  width: 80%;
+  margin: auto;
+}
+
+.testimonials .icons {
+  width: 75%;
+  display: flex;
+  margin-top: 4vh;
+}
+
+.testimonials .arrows {
+  align-self: center;
+  margin-right: 0;
+  margin-left: auto;
+  display: flex;
+  column-gap: 2vw;
+}
+
+.testimonials .arrows span {
+  background: var(--white);
+  transition: all ease-out 500ms;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.testimonials .arrows span:hover {
+  background: var(--black);
+  transform: scale(1.35);
+  color: var(--white);
+}
+
+.testimonials .arrows span i {
+  margin: auto auto;
+  font-size: 20px;
+}
+
+.customer-info span {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.customer-info .name-location {
+  display: flex;
+  flex-direction: column;
+  row-gap: calc(3px + 0.5vh);
+  height: 60px;
+}
+
+.name-location p {
+  width: fit-content;
+  margin: 0;
+}
+
+.customer-info .location {
+  color: #939191;
 }
 
 @media screen and (max-width: 1260px) {
