@@ -649,12 +649,31 @@ header .header-image-right {
   margin-top: 4vh;
 }
 
+.testimonials .line-flexbox {
+  width: fit-content;
+  display: flex;
+  column-gap: 1vw;
+  justify-content: center;
+  margin-left: 10%;
+  flex: 1;
+  color: #939191;
+}
+
+.line-flexbox span {
+  transform: all ease-in-out 300ms;
+}
+
+.line-flexbox span:hover {
+  color: var(--orange);
+}
+
 .testimonials .arrows {
   align-self: center;
-  margin-right: 0;
-  margin-left: auto;
+  width: fit-content;
+  margin: 0 0 0 auto;
   display: flex;
   column-gap: 2vw;
+  justify-content: right;
 }
 
 .testimonials .arrows span {
@@ -698,6 +717,208 @@ header .header-image-right {
 
 .customer-info .location {
   color: #939191;
+}
+
+.FAQ {
+  min-height: 100vh;
+  background: var(--darker-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FAQ h3 {
+  margin-top: 5vw;
+  margin-bottom: 4vh;
+}
+
+.FAQ .FAQ-1,
+.FAQ .FAQ-2,
+.FAQ .FAQ-3,
+.FAQ .FAQ-4,
+.FAQ .FAQ-5 {
+  background: var(--white);
+  width: 48vw;
+  margin-bottom: 1.5vh;
+}
+
+.FAQ-1 .header,
+.FAQ-2 .header,
+.FAQ-3 .header,
+.FAQ-4 .header,
+.FAQ-5 .header {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.FAQ-1 .header span,
+.FAQ-2 .header span,
+.FAQ-3 .header span,
+.FAQ-4 .header span,
+.FAQ-5 .header span {
+  background: var(--orange);
+  width: 51px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.FAQ-1 .header .hide-me,
+.FAQ-2 .header .hide-me,
+.FAQ-3 .header .hide-me,
+.FAQ-4 .header .hide-me,
+.FAQ-5 .header .hide-me {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  /* -webkit-transition: all ease-out 600ms;
+  -moz-transition: all 600ms;
+  -ms-transition: all ease-out 600ms;
+  -o-transition: all ease-out 600ms;
+  transition: all ease-out 600ms; */
+}
+
+.FAQ-1 .content,
+.FAQ-2 .content,
+.FAQ-3 .content,
+.FAQ-4 .content,
+.FAQ-5 .content {
+  overflow: hidden;
+  max-height: 0;
+  width: 0;
+  margin: auto;
+  margin-bottom: 2vh;
+  -webkit-transition: width ease-out 300ms;
+  -moz-transition: width 300ms;
+  -ms-transition: width ease-out 300ms;
+  -o-transition: width ease-out 300ms;
+  transition: width ease-out 300ms;
+}
+
+.FAQ-1:hover > .header .title-2,
+.FAQ-2:hover > .header .title-2,
+.FAQ-3:hover > .header .title-2,
+.FAQ-4:hover > .header .title-2,
+.FAQ-5:hover > .header .title-2 {
+  align-self: flex-end;
+}
+
+.FAQ-1:hover > .header .plus,
+.FAQ-2:hover > .header .plus,
+.FAQ-3:hover > .header .plus,
+.FAQ-4:hover > .header .plus,
+.FAQ-5:hover > .header .plus {
+  display: none;
+}
+
+.FAQ-1:hover > .header .hide-me,
+.FAQ-2:hover > .header .hide-me,
+.FAQ-3:hover > .header .hide-me,
+.FAQ-4:hover > .header .hide-me,
+.FAQ-5:hover > .header .hide-me {
+  display: flex;
+  position: relative;
+  width: 51px;
+  height: 48px;
+}
+
+.FAQ-1:hover > .content,
+.FAQ-2:hover > .content,
+.FAQ-3:hover > .content,
+.FAQ-4:hover > .content,
+.FAQ-5:hover > .content {
+  display: block;
+  width: 90%;
+  max-height: fit-content;
+}
+width .content {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2vh;
+}
+*/ .FAQ-1 .content p,
+.FAQ-2 .content p,
+.FAQ-3 .content p,
+.FAQ-4 .content p,
+.FAQ-5 .content p {
+  width: 73%;
+}
+
+.FAQ-1 .content .question-1,
+.FAQ-2 .content .question-2,
+.FAQ-3 .content .question-3,
+.FAQ-4 .content .question-4,
+.FAQ-5 .content .question-5 {
+  font-size: 18px;
+  color: #939191;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  column-gap: 4vw;
+  justify-content: center;
+  color: white;
+}
+
+.footer-top {
+  background: var(--black);
+  opacity: 0.98;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-top .flexbox {
+  display: flex;
+  column-gap: 6vw;
+}
+
+.footer-left {
+  width: 400px;
+}
+
+.footer-left h3 {
+  display: ;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+
+.footer-right .info .header {
+  font-size: var(--paragraph-1-size);
+  color: #939191;
+  margin-bottom: 2vh;
+}
+
+footer nav {
+  background: var(--black);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .topmost-bar .logo {
+  margin: 0;
+}
+
+footer .copyright {
+  color: #939191;
+  font-size: var(--paragraph-2-size);
 }
 
 @media screen and (max-width: 1260px) {
