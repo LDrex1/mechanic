@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   box-sizing: border-box;
   --h1-font-size: 64px;
   --h2-font-size: 58px;
@@ -59,6 +60,10 @@ p {
   font-size: var(--paragraph-1-size);
 }
 
+a {
+  color: #1e1b1b;
+}
+
 button {
   border: none;
   border-radius: 12px;
@@ -87,6 +92,11 @@ button {
 
 .topmost-bar .logo {
   margin: auto 0 auto 0;
+}
+
+.topmost-bar #drop,
+.topmost-bar .menu-drop {
+  display: none;
 }
 
 .nav-right {
@@ -564,6 +574,10 @@ header .header-image-right {
   width: fit-content;
 }
 
+.proffessional-experience:last-child > .title-2 {
+  min-width: 148px;
+}
+
 .proffessional-experience h2 {
   color: var(--purple);
 }
@@ -710,6 +724,18 @@ header .header-image-right {
   border-radius: 50%;
 }
 
+.testimonial-1 .customer-info .profile-pic {
+  background: url(images/testimonial1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.testimonial-2 .customer-info .profile-pic {
+  background: url(images/testimonial2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .customer-info .name-location {
   display: flex;
   flex-direction: column;
@@ -846,6 +872,12 @@ footer {
 
 .footer-left {
   width: 400px;
+}
+
+.footer-left .socials {
+  margin-top: 4vh;
+  display: flex;
+  column-gap: 10px;
 }
 
 .footer-right {
@@ -1061,6 +1093,7 @@ footer .copyright {
     margin-bottom: 2.5vh;
     display: flex;
     flex-wrap: wrap;
+    row-gap: 10px;
     justify-content: space-around;
   }
 
@@ -1112,7 +1145,7 @@ footer .copyright {
   }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 672px) {
   .topmost-bar {
     flex-direction: column;
   }
@@ -1135,13 +1168,25 @@ footer .copyright {
     column-gap: 6vw;
   }
 
+  .FAQ .FAQq {
+    width: 85%;
+  }
+
   .footer-top .flexbox {
     flex-direction: column;
+    row-gap: 2vh;
   }
 
   .footer-top .flexbox .footer-left {
     width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-top .flexbox .footer-left .socials {
+    margin-top: 1vh;
+    align-self: center;
   }
 
   .footer-top .flexbox .footer-right {
@@ -1165,7 +1210,7 @@ footer .copyright {
     --paragraph-2-size: 14px;
     --caption-size: 10px;
     --title-1-size: var(--h5-font-size);
-    --title-2-size: 20px;
+    --title-2-size: 18px;
   }
 
   .header-image-right .service-img {
@@ -1176,13 +1221,84 @@ footer .copyright {
     right: -10px;
   }
 
-  .first-page .nav-right,
-  footer .nav-right {
-    display: none;
+  .nav-right,
+  .nav-right ul {
+    flex-direction: column;
+    row-gap: 6vh;
+    align-items: center;
+    font-size: 2px;
+  }
+
+  .nav-right ul {
+    margin-top: 10vh;
+  }
+
+  .nav-right ul li a {
+    background: linear-gradient(
+      transparent 0%,
+      var(--black) 89%,
+      var(--darker-white) 92%,
+      var(--lighter-white) 95%,
+      white 100%
+    );
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    font-size: var(--title-2-size);
+    transition: all ease-out 600ms;
+  }
+
+  .nav-right ul li a:hover,
+  .nav-right ul li a:active {
+    color: var(--white);
+    background-size: 100% 100%;
+  }
+
+  .first-page .nav-right {
+    position: fixed;
+    top: 0;
+    /* margin-top: 30px; */
+    width: 100%;
+    height: 100vh;
+    background: var(--black);
+    border-radius: 10px;
+    color: var(--orange);
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: transform cubic-bezier(0, 0.27, 0.92, 0.65) 500ms;
+  }
+
+  .topmost-bar #drop:checked ~ .nav-right {
+    transform: translateX(0%);
+  }
+
+  .topmost-bar #drop:checked ~ .menu-drop {
+    color: var(--orange);
+    z-index: 3;
+  }
+
+  .nav-right a {
+    color: var(--orange);
+  }
+
+  .topmost-bar .menu-drop {
+    display: block;
+    position: absolute;
+    right: 5%;
+    position: fixed;
+    z-index: 2;
   }
 
   .quote-left .features-div .feature {
     width: 90%;
+  }
+
+  .flexbox-process .process-left h2 {
+    margin-top: 1.5vh;
+    text-align: left;
+  }
+
+  .flexbox-process .process-left {
+    margin-bottom: 1.5vh;
   }
 
   .brand-images-div {
@@ -1198,5 +1314,15 @@ footer .copyright {
     min-width: 100px;
     aspect-ratio: 1.667;
     height: auto;
+  }
+
+  footer .topmost-bar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5px;
+  }
+
+  footer .topmost-bar .nav-right {
+    display: none;
   }
 }
