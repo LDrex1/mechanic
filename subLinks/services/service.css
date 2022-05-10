@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  --h1-font-size: 64px;
+  --h2-font-size: 58px;
+  --h3-font-size: 48px;
+  --h4-font-size: 40px;
+  --h5-font-size: 32px;
+  --paragraph-1-size: 18px;
+  --paragraph-2-size: 16px;
+  --caption-size: 12px;
+  --title-1-size: var(--h5-font-size);
+  --title-2-size: 24px;
+  --black: #1e1b1b;
+  --orange: #ff6433;
+  --purple: #661ce7;
+  --green: #00d289;
+  --darker-white: #e2e6e9;
+  --lighter-white: #f2f2f2;
+  --white: #ffffff;
+}
+
+.title-1 {
+  font-size: var(--title-1-size);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--black);
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+  font-size: var(--paragraph-1-size);
+}
+
+a {
+  color: #1e1b1b;
+}
+
+a[href^="tel"] {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  width: 203px;
+  height: 64px;
+  padding: 16px 40px;
+  font-size: var(--paragraph-1-size);
+}
+
+.title-2 {
+  font-size: var(--title-2-size);
+}
+
+.first-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.first-page .topmost-bar {
+  width: 85%;
+  margin: 2vh auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topmost-bar .logo {
+  margin: auto 0 auto 0;
+}
+
+.topmost-bar #drop,
+.topmost-bar .menu-drop {
+  display: none;
+}
+
+.nav-right {
+  display: flex;
+  column-gap: 1.67vw;
+}
+.nav-right .thin-line {
+  border-right: 2px solid #939191;
+}
+
+.topmost-bar .nav-right ul {
+  list-style: none;
+  display: inherit;
+  column-gap: 2.07vw;
+  font-size: var(--paragraph-2-size);
+}
+.nav-right ul li {
+  width: max-content;
+  margin: auto;
+}
+
+.nav-right .assistance {
+  position: relative;
+  display: flex;
+  width: 175px;
+  height: 50px;
+}
+
+.assistance .whatsapp {
+  background: #00d289;
+  font-size: 42px;
+  color: white;
+  align-self: center;
+  justify-self: left;
+}
+
+.assistance .caption {
+  position: absolute;
+  font-size: 16px;
+  color: aqua #1e1b1b;
+  right: 0;
+  left: auto;
+}
+
+.assistance .phone-number {
+  font-size: var(--paragraph-1-size);
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.fa-solid {
+  font-size: 45px;
+}
