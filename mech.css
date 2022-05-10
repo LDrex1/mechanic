@@ -64,6 +64,11 @@ a {
   color: #1e1b1b;
 }
 
+a[href^="tel"] {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 button {
   border: none;
   border-radius: 12px;
@@ -1211,6 +1216,10 @@ footer .copyright {
     --caption-size: 10px;
     --title-1-size: var(--h5-font-size);
     --title-2-size: 18px;
+  }
+
+  input {
+    font-size: var(--paragraph-1-size);
   }
 
   .header-image-right .service-img {
