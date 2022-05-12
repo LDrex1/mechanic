@@ -156,3 +156,581 @@ button {
 .fa-solid {
   font-size: 45px;
 }
+
+.title-2 {
+  font-size: var(--title-2-size);
+}
+
+.first-page {
+  min-height: 80vh;
+}
+
+header {
+  background: url(images/header_image.png);
+  background-size: 75% 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  width: 75%;
+  min-height: 50vh;
+  margin: auto;
+  display: flex;
+}
+
+.header-content {
+  background: var(--black);
+  width: 60%;
+  margin-right: 0;
+  margin-left: auto;
+  color: var(--lighter-white);
+  display: flex;
+}
+
+.header-content .cont {
+  width: 70%;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content .cont p {
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+
+.header-content .cont button {
+  background: var(--orange);
+}
+
+.diagnostics {
+  background: var(--darker-white);
+  min-height: 100vh;
+  display: flex;
+}
+
+.diagnostics .flexbox {
+  display: flex;
+  column-gap: 2vw;
+  row-gap: 2vw;
+  width: 75%;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-bottom: 3vh;
+}
+
+.diagnostics .flexbox .left {
+  background: var(--white);
+  min-width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.diagnostics .flexbox .left .car-image {
+  width: 90%;
+  aspect-ratio: 1.8;
+}
+
+.car-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.diagnostics .flexbox .left .content {
+  width: 90%;
+}
+
+.diagnostics .flexbox .left .content h3 {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.diagnostics .flexbox .left .content > p {
+  margin-top: 4vh;
+}
+
+.diagnostics .flexbox .left .title-2 {
+  color: #939191;
+}
+
+.diagnostics .flexbox .right {
+  min-width: 460px;
+  display: flex;
+  column-gap: 2vw;
+  row-gap: 2vw;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.diagnostics .flexbox .right .dig {
+  background: var(--white);
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1.275;
+  transition: all 500ms ease-in;
+}
+
+.diagnostics .flexbox .right .dig:hover {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.diagnostics .flexbox .right .dig p {
+  margin-top: 2vh;
+}
+
+.how-1 {
+  min-height: 90vh;
+  display: flex;
+}
+
+.how-1 .flexbox {
+  width: 75%;
+  display: flex;
+  column-gap: 3.5vw;
+  align-items: center;
+  margin: auto;
+}
+
+.how-1 .flexbox .left {
+  display: flex;
+  flex-direction: column;
+  flex: 1.2;
+}
+
+.how-1 .flexbox .left h3 {
+  margin-bottom: 4vh;
+}
+
+.how-1 .flexbox .left .points {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5vh;
+}
+
+.how-1 .flexbox .left .points .each-point {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+}
+.how-1 .flexbox .left .points .each-point span {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #00d289;
+  display: flex;
+  color: var(--white);
+}
+
+.each-point span i {
+  font-size: 30px;
+  margin: auto;
+}
+
+.how-1 .flexbox .right {
+  flex: 1;
+}
+
+.how-1 .flexbox .right .right-flexbox {
+  display: flex;
+  column-gap: 1vw;
+}
+
+.how-1 .flexbox .right .right-flexbox .left-image {
+  background: url(images/how-1-car-left.png);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  aspect-ratio: 0.637;
+}
+
+.how-1 .flexbox .right .right-flexbox .right-image {
+  background: url(images/how-1-car-right.png);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  aspect-ratio: 0.637;
+}
+
+.how-2 {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.how-2 .flexbox {
+  width: 75%;
+  display: flex;
+  column-gap: 3vw;
+  align-items: center;
+  height: fit-content;
+}
+
+.how-2 .flexbox .left {
+  flex: 1;
+}
+
+.how-2 .flexbox .left .left-flexbox {
+  display: flex;
+  column-gap: 1vw;
+}
+
+.how-2 .flexbox .left .left-flexbox .left-image {
+  background: url(images/how-2-car-left.png);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  aspect-ratio: 0.637;
+}
+
+.how-2 .flexbox .left .left-flexbox .right-image {
+  background: url(images/how-2-car-right.png);
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  aspect-ratio: 0.637;
+}
+
+.how-2 .flexbox .right {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+
+.how-2 .flexbox .right button {
+  background: var(--orange);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  column-gap: 4vw;
+  justify-content: center;
+  color: white;
+}
+
+.footer-top {
+  background: var(--black);
+  opacity: 0.98;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-top .flexbox {
+  display: flex;
+  column-gap: 6vw;
+}
+
+.footer-left {
+  width: 400px;
+}
+
+.footer-left .socials {
+  margin-top: 4vh;
+  display: flex;
+  column-gap: 10px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+}
+
+.footer-right .info .header {
+  font-size: var(--paragraph-1-size);
+  color: #939191;
+  margin-bottom: 2vh;
+}
+
+footer nav {
+  background: var(--black);
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .topmost-bar .logo {
+  margin: 0;
+}
+
+footer .copyright {
+  color: #939191;
+  font-size: var(--paragraph-2-size);
+}
+
+@media screen and (max-width: 1260px) {
+  .first-page .topmost-bar,
+  header {
+    width: 92%;
+  }
+
+  .header-content .cont {
+    width: 80%;
+  }
+
+  header .header-content button {
+    margin-bottom: 3vh;
+  }
+
+  .diagnostics .flexbox .right {
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+
+  .how-1 .flexbox,
+  .how-2 .flexbox {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  * {
+    --h1-font-size: 54px;
+    --h2-font-size: 48px;
+    --h3-font-size: 42px;
+    --h4-font-size: 38px;
+    --h5-font-size: 30px;
+    --paragraph-1-size: 16px;
+    --paragraph-2-size: 14px;
+    --caption-size: 10px;
+    --title-1-size: var(--h5-font-size);
+    --title-2-size: 20px;
+  }
+
+  header {
+    background-size: 80% 100%;
+  }
+
+  .header-content {
+    width: 80%;
+  }
+
+  .header-content .cont {
+    width: 80%;
+  }
+
+  .diagnostics .flexbox .left,
+  .diagnostics .flexbox .right {
+    min-width: fit-content;
+  }
+
+  .how-1 .flexbox {
+    flex-direction: column-reverse;
+    row-gap: 3vh;
+    margin-top: 6vh;
+  }
+
+  .how-2 .flexbox {
+    flex-direction: column;
+    row-gap: 3vh;
+    margin-top: 6vh;
+    margin-bottom: 8vh;
+  }
+
+  .how-1 .flexbox .right,
+  .how-2 .flexbox .left {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 12vh;
+  }
+}
+
+@media screen and (max-width: 915px) and (min-height: 1100px) {
+  .first-page {
+    min-height: 55vh;
+  }
+
+  header {
+    background-size: 100% 100%;
+    min-height: 40vh;
+  }
+}
+
+.how-1 {
+  min-height: 55vh;
+}
+
+.how-2 {
+  min-height: 75vh;
+}
+
+.how-2 .flexbox {
+  margin-bottom: 4vh;
+}
+
+footer {
+  margin: 0;
+}
+
+@media screen and (max-width: 672px) {
+  .topmost-bar {
+    flex-direction: column;
+  }
+
+  .topmost-bar .nav-right {
+    align-self: center;
+  }
+
+  header {
+    background-size: 90% 100%;
+  }
+
+  .header-content {
+    width: 85%;
+  }
+
+  .header-content .cont {
+    width: 85%;
+  }
+
+  .diagnostics .flexbox {
+    width: 85%;
+  }
+
+  .footer-top .flexbox {
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+
+  .footer-top .flexbox .footer-left {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-top .flexbox .footer-left .socials {
+    margin-top: 1vh;
+    align-self: center;
+  }
+
+  .footer-top .flexbox .footer-right {
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  * {
+    --h1-font-size: 40px;
+    --h2-font-size: 36px;
+    --h3-font-size: 30px;
+    --h4-font-size: 25px;
+    --h5-font-size: 20px;
+    --paragraph-1-size: 16px;
+    --paragraph-2-size: 14px;
+    --caption-size: 10px;
+    --title-1-size: var(--h5-font-size);
+    --title-2-size: 18px;
+  }
+
+  .nav-right,
+  .nav-right ul {
+    flex-direction: column;
+    row-gap: 6vh;
+    align-items: center;
+    font-size: 2px;
+  }
+
+  .nav-right ul {
+    margin-top: 10vh;
+  }
+
+  .nav-right ul li a {
+    background: linear-gradient(
+      transparent 0%,
+      var(--black) 89%,
+      var(--darker-white) 92%,
+      var(--lighter-white) 95%,
+      white 100%
+    );
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    font-size: var(--title-2-size);
+    transition: all ease-out 600ms;
+  }
+
+  .nav-right ul li a:hover,
+  .nav-right ul li a:active {
+    color: var(--white);
+    background-size: 100% 100%;
+  }
+
+  .first-page .nav-right {
+    position: fixed;
+    top: 0;
+    /* margin-top: 30px; */
+    width: 100%;
+    height: 100vh;
+    background: var(--black);
+    border-radius: 10px;
+    color: var(--orange);
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: transform cubic-bezier(0, 0.27, 0.92, 0.65) 500ms;
+  }
+
+  .topmost-bar #drop:checked ~ .nav-right {
+    transform: translateX(0%);
+  }
+
+  .topmost-bar #drop:checked ~ .menu-drop {
+    color: var(--orange);
+    z-index: 3;
+  }
+
+  .nav-right a {
+    color: var(--orange);
+  }
+
+  .topmost-bar .menu-drop {
+    display: block;
+    position: absolute;
+    right: 5%;
+    position: fixed;
+    z-index: 2;
+  }
+
+  .header-content {
+    width: 100%;
+  }
+
+  footer .topmost-bar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5px;
+  }
+
+  footer .topmost-bar .nav-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .diagnostics .flexbox .right .dig {
+    min-width: 153px;
+    flex: 0.8;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
