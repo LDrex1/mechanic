@@ -75,6 +75,7 @@ button {
   width: 203px;
   height: 64px;
   padding: 16px 40px;
+  color: inherit;
   font-size: var(--paragraph-1-size);
 }
 
