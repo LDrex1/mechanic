@@ -167,7 +167,7 @@ button {
 }
 
 header {
-  background: url(images/header_image.png);
+  background: url(../images/services/header_image.png);
   background-size: 75% 100%;
   background-repeat: no-repeat;
   background-position: left top;
@@ -207,6 +207,8 @@ header {
   background: var(--darker-white);
   min-height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .diagnostics .flexbox {
@@ -214,7 +216,8 @@ header {
   column-gap: 2vw;
   row-gap: 2vw;
   width: 75%;
-  margin: auto;
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
   flex-wrap: wrap;
   margin-bottom: 3vh;
 }
@@ -342,7 +345,7 @@ header {
 }
 
 .how-1 .flexbox .right .right-flexbox .left-image {
-  background: url(images/how-1-car-left.png);
+  background: url(../images/services/how-1-car-left.png);
   background-size: cover;
   background-position: center;
   flex: 1;
@@ -350,7 +353,7 @@ header {
 }
 
 .how-1 .flexbox .right .right-flexbox .right-image {
-  background: url(images/how-1-car-right.png);
+  background: url(../images/services/how-1-car-right.png);
   background-size: cover;
   background-position: center;
   flex: 1;
@@ -381,7 +384,7 @@ header {
 }
 
 .how-2 .flexbox .left .left-flexbox .left-image {
-  background: url(images/how-2-car-left.png);
+  background: url(../images/services/how-2-car-left.png);
   background-size: cover;
   background-position: center;
   flex: 1;
@@ -389,7 +392,7 @@ header {
 }
 
 .how-2 .flexbox .left .left-flexbox .right-image {
-  background: url(images/how-2-car-right.png);
+  background: url(../images/services/how-2-car-right.png);
   background-size: cover;
   background-position: center;
   flex: 1;
