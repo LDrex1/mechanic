@@ -69,6 +69,22 @@ a[href^="tel"] {
   color: inherit;
 }
 
+.container {
+  padding: 0 10%;
+}
+
+.mb-header {
+  margin-bottom: 20px;
+}
+
+.top-seperate {
+  margin-top: 35px;
+}
+
+.center {
+  text-align: center;
+}
+
 button {
   border: none;
   border-radius: 12px;
@@ -80,6 +96,10 @@ button {
 
 .title-2 {
   font-size: var(--title-2-size);
+}
+
+.par-2 {
+  font-size: var(--paragraph-2-size);
 }
 
 .first-page {
@@ -155,6 +175,82 @@ button {
 
 .fa-solid {
   font-size: 45px;
+}
+
+.proffessional-experience {
+  background: var(--lighter-white);
+  min-height: 18vh;
+  display: flex;
+  column-gap: 9.6vw;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.proffessional-experience .each-point-2 {
+  width: fit-content;
+}
+
+.proffessional-experience:last-child > .title-2 {
+  min-width: 148px;
+}
+
+.proffessional-experience h2 {
+  color: var(--purple);
+}
+
+.proffessional-experience .title-2 {
+  font-size: var(--paragraph-2-size);
+}
+
+.pictures-flexbox {
+  position: relative;
+  display: flex;
+  height: 45vh;
+  min-height: 250px;
+}
+
+.pictures-flexbox .car-picture {
+  background: url("https://i.postimg.cc/N0155KLs/car-image.png");
+  background-position: center;
+  background-size: cover;
+  flex: 1.2;
+}
+
+.pictures-flexbox .battery-cable-picture {
+  background: url("https://images.unsplash.com/photo-1597766325363-f5576d851d6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+}
+
+.pictures-flexbox .get-in-touch {
+  background: var(--orange);
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  left: 17vw;
+  bottom: 0;
+  width: 710px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.get-in-touch .content {
+  width: 90%;
+  margin: auto;
+}
+
+.get-in-touch .content .contact-us {
+  padding-top: 2vh;
+}
+
+.content .contact-us button {
+  background: var(--black);
+  color: var(--white);
 }
 
 footer {
@@ -246,6 +342,9 @@ footer .copyright {
     --title-1-size: var(--h5-font-size);
     --title-2-size: 20px;
   }
+  .pictures-flexbox .get-in-touch {
+    width: 82.8%;
+  }
 }
 
 @media screen and (max-width: 672px) {
@@ -255,6 +354,15 @@ footer .copyright {
 
   .topmost-bar .nav-right {
     align-self: center;
+  }
+
+  .proffessional-experience {
+    column-gap: 6vw;
+  }
+
+  .footer-top .flexbox {
+    flex-direction: column;
+    row-gap: 2vh;
   }
 
   .footer-top .flexbox .footer-left {
@@ -295,6 +403,10 @@ footer .copyright {
 
   input {
     font-size: var(--paragraph-1-size);
+  }
+
+  .container {
+    padding: 0 1%;
   }
 
   .nav-right,
