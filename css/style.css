@@ -69,6 +69,10 @@ a[href^="tel"] {
   color: inherit;
 }
 
+button {
+  color: var(--white);
+}
+
 .container {
   padding: 0 10%;
 }
