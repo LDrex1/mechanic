@@ -196,7 +196,7 @@ section.main-blogs {
     width: 90%;
   }
   .blog .img-div {
-    min-width: 200px;
+    min-width: auto;
     width: 90%;
   }
 }
