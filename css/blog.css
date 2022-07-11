@@ -196,7 +196,7 @@ section.main-blogs {
     width: 90%;
   }
   .blog .img-div {
-    min-width: auto;
+    min-width: unset;
     width: 90%;
   }
 }
@@ -210,6 +210,6 @@ section.main-blogs {
   }
   .blog {
     width: 95%;
-    min-width: 150px;
+    min-width: unset;
   }
 }
