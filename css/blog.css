@@ -209,7 +209,11 @@ section.main-blogs {
     margin: auto;
   }
   .blog {
-    width: 95%;
+    width: 97%;
+    min-width: unset;
+  }
+
+  .top-blog .image-div {
     min-width: unset;
   }
 }
