@@ -196,21 +196,19 @@ section.main-blogs {
     width: 90%;
   }
   .blog .img-div {
-    min-width: unset;
-    width: 90%;
+    min-width: 90%;
   }
 }
 
 @media screen and (max-width: 498px) {
   .header-content .cont {
-    width: 95%;
+    min-width: 95%;
   }
   .blog .img-div {
     margin: auto;
   }
   .blog {
-    width: 97%;
-    min-width: unset;
+    min-width: 97%;
   }
 
   .top-blog .image-div {
