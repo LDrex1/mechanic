@@ -1,0 +1,21 @@
+.img-div img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-div {
+  width: 100%;
+}
+
+.first-page {
+  min-height: fit-content;
+}
+
+.top-seperate {
+  margin-top: calc(4vw + 4vh);
+}
+
+.par-seperate {
+  margin-top: calc(2vw + 1.5vh);
+}
