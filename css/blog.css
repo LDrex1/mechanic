@@ -215,3 +215,9 @@ section.main-blogs {
     min-width: unset;
   }
 }
+
+@media screen and (max-width: 290px) {
+  .butt-div {
+    flex-wrap: wrap;
+  }
+}
